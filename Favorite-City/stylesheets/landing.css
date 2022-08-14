@@ -1,0 +1,282 @@
+/* Landing StyleSheet */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+::-webkit-scrollbar-track {
+    background: #F1F7ED;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #3D5A6C;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #537991;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #F1F7ED;
+    background-image: url(../images/banner.png);
+    background-position: top;
+    background-size: cover;
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+
+/* Header and Menu */
+
+#header_section {
+    position: relative;
+    float: right;
+    display: block;
+    width: 10vw;
+}
+
+#header_section h3 {
+    background-color: #3d5a6ccd;
+    color: #F1F7ED;
+    padding: .5vw;
+    border: none;
+    font-size: 1.3vw;
+    text-align: center;
+    cursor: pointer;
+}
+
+.header_menu {
+    position: absolute;
+    top: 2.5vw;
+    background-color: #3d5a6ccd;
+    width: 10vw;
+    box-shadow: 0px 5px 5px 0px #000000b8;
+    z-index: 1;
+    text-align: center;
+    display: none;
+}
+
+.header_menu a {
+    font-size: 1.5vw;
+    text-decoration: none;
+    display: block;
+    padding: .5vw;
+    color: #F1F7ED;
+}
+
+#header_section:hover .header_menu {
+    display: block;
+}
+
+#header_section:hover h3 {
+    background-color: #293d4ad7;
+}
+
+.header_menu a:hover {
+    background-color: #293d4ad7;
+}
+
+
+/* Welcome Sign Container */
+
+.welcome_sign {
+    clear: both;
+    text-align: center;
+    width: 75vw;
+    margin-left: 15vw;
+    margin-right: 30vw;
+    margin-top: 20vw;
+    color: #F1F7ED;
+    font-size: 1.7vw;
+    position: absolute;
+    background-color: #3D5A6C;
+    border-radius: 100vw;
+    padding: 5vw;
+    box-shadow: -.5vw .5vw 5px #253742;
+}
+
+
+/* Main Container */
+
+#main_container {
+    margin-top: 45vw;
+    margin-left: 1vw;
+}
+
+/*
+Summary Section
+*/
+
+#summary_section {
+    height: 25%;
+    width: 98vw;
+    overflow: auto;
+}
+
+.summary_quote p {
+    color: #202f38;
+}
+
+.summary_quote {
+    float: left;
+    margin-top: 1vw;
+    margin-left: 5vw;
+    width: 35vw;
+    padding-left: 5vw;
+    border-left: 5px #86CDF9 solid; 
+    height: 39vw;
+    overflow: auto;
+    font-size: 3vw;
+}
+
+.summary_quote::-webkit-scrollbar {
+    width: 0px;
+}
+
+.summary_quote::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#summary_section .summary_image img {
+    float: right;
+    width: 55%;
+    object-fit: cover;
+}
+
+/*
+Gallery Section
+*/
+
+#gallery_section {
+    height: 40vw;
+    margin-top: 10vw;
+    margin-left: 5vw;
+}
+
+#gallery {
+    float: left;
+    border: 1px #86CDF9 solid;
+    border-radius: 50px;
+    text-align: center;
+    width: 40vw;
+    height: 38vw;
+    box-shadow: -.5vw .5vw 5px #253742;
+}
+
+#gallery .title {
+    margin-top: 2vw;
+    font-size: 2vw;
+    color: #3a5566c6;
+}
+
+.images {
+    display: none;
+}
+
+.previousButton, .nextButton {
+    position: absolute;
+    top: 111vw;
+    width: auto;
+    padding: .5vw;
+    font-size: 3vw;
+    color: #3D5A6C;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 0 5px 5px 0;
+    transition: .5s ease;
+}
+
+.previousButton:hover, .nextButton:hover {
+    background-color: #25374233;
+}
+
+.previousButton {
+    left: 7vw;
+}
+
+.nextButton {
+    margin-left: 16.5vw;
+}
+
+.queue {
+    display: inline-block;
+    background-color: #3a556643;
+    cursor: pointer;
+    width: 1.5vw;
+    height: 1.5vw;
+    margin: 0 1vw;
+    border-radius: 50%;
+    transition: background-color .5s ease;
+}
+
+.queue:hover, .active {
+    background-color: #3A5566;
+}
+
+#image_title {
+    position: relative;
+    top: .5vw;  
+}
+
+.image_caption {
+    color: #202f38;
+    font-size: 2.5vw;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .85;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#gallery .images img{
+    margin-top: 1vw;
+    border: 1px #71aed4 solid;
+    border-radius: 1vw;
+    object-fit: cover;
+}
+
+.flag {
+    margin-top: 10vw;
+    float: right;
+    margin-right: 13vw;
+    width: 25%;
+    object-fit: cover;
+}
+
+
+/* Footer */
+
+#footer {
+    position: relative;
+    top: 12vw;
+    text-align: center;
+    font-size: 1.5vw;
+    color: #3A5566;
+}
+
+.footer_line {
+    margin-bottom: 1vw;
+    border-top: 5px #6A0F49 solid;
+    opacity: .5;
+    width: 50%;
+    margin-left: 25vw;
+}

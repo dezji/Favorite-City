@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheets/weather.css">
+    <script src="scripts/weatherIOwidget.js"></script>
+    <script src="scripts/tomorrowWeatherwidget.js"></script>
+    <title>Weather In Raleigh</title>
+</head>
+<body>
+
+    <div id="header_section">
+        <h3>Navigation</h3>
+        <div class="header_menu">
+            <a href="landing.html">Welcome</a>
+            <a href="history.html">History</a>
+            <a href="favorite.html">Favorite</a>
+            <a href="culture.html">Culture</a>
+            <a href="activities.html">Activities</a>
+            <a href="sitemap.html">Site Map</a>
+            <a href="glossary.html">Glossary</a>
+            <a href="credits.html">Credits</a>
+        </div>
+    </div> <!-- end of header_section -->
+
+    <div id="subheader">
+        <div class="sub_title"><h2>Weather in Raleigh</h2></div>
+
+        <div class="sub_image">
+            <img src="images/raleighSkyline.jpg" alt="Raleigh's Skyline" style="width: 100%; object-fit: contain;">
+        </div>
+
+        <div class="weather_widget">
+            <a class="weatherwidget-io" 
+                href="https://forecast7.com/en/35d78n78d64/raleigh/?unit=us" 
+                data-font="Arial Rounded MT Bold" 
+                data-icons="Climacons Animated" 
+                data-days="5" 
+                data-theme="weather_one" >Raleigh, NC, USA</a>
+        </div>
+    </div> <!-- end of subheader -->
+        
+    <div id="main_container">
+        <div class="image1">
+            <img src="images/temp.png" alt="Raleigh's Average Temperatures" title="Raleigh's Average Temperatures">
+        </div>
+        <div class="image2">
+            <img src="images/bridge.jpg" alt="Bridge in Raleigh" title="Bridge in Raleigh">
+        </div>
+
+        <div id="summary_section">
+            <div class="summary_line"></div>
+            <div class="summary_topic"><p>Raleigh's Weather</p></div>
+            <div class="summary_title"><p>Average Temps and General Vibes</p></div>
+
+            <div class="summary_quote">
+                <p>
+                    The weather in Raleigh is pretty average. The city sees all four seasons and has the average 
+                    temperatures expected for its seasons, hot summers and cool winters round out the general atomsphere 
+                    for a year in Raleigh.
+                    <br><br>
+                    From this page, the current weather and weekly forecast showcase Raleigh's current temperatures and 
+                    weather.
+                </p>
+            </div>
+
+            <div class="see_more" onclick="return confirm(`This action will take you to an external site\nContinue (OK)\nStay here (Cancel)`)">
+                <a href="https://weatherspark.com/y/20170/Average-Weather-in-Raleigh-North-Carolina-United-States-Year-Round" target="_blank">See More</a>
+            </div>
+        </div> <!-- end of summary_section -->
+    </div> <!-- end of main_container -->
+
+    <div id="weather_section">
+        <div class="weather_section_image">
+            <img src="images/waterLine.png" alt="Water Line" title="Water Line">
+        </div>
+        <div class="widget_container">
+            <div class="tomorrow"
+                data-location-id="124831"
+                data-language="EN"
+                data-unit-system="IMPERIAL"
+                data-skin="light"
+                data-widget-type="summary"
+                style="padding-bottom:22px;position:relative;"
+            >
+                <a
+                href="https://www.tomorrow.io/weather/"
+                rel="nofollow noopener noreferrer"
+                target="_blank"
+                style="position: absolute; bottom: 0; transform: translateX(-50%); left: 50%;"
+                >
+                <img
+                    alt="Powered by Tomorrow.io"
+                    src="https://weather-website-client.tomorrow.io/img/powered-by-tomorrow.svg"
+                    width="140"
+                    height="15"
+                />
+                </a>
+            </div>
+        </div>
+    </div> <!-- end of weather_section-->
+
+    <div id="footer">
+        <div class="footer_line"></div>
+        <footer>
+            Deziallia Morris | Seminole State
+        </footer>
+    </div> <!-- end of footer -->
+</body>
+</html>

@@ -1,0 +1,243 @@
+/* Favorite Stylesheet */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+::-webkit-scrollbar-track {
+    background: #F1F7ED;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #3D5A6C;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #537991;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #F1F7ED;
+    background-image: url(../images/raleigh.gif);
+    background-position: top;
+    background-size: cover;
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+/* Header and Menu */
+
+#header_section {
+    position: relative;
+    float: right;
+    display: block;
+    width: 10vw;
+}
+
+#header_section h3 {
+    background-color: #3d5a6ccd;
+    color: #F1F7ED;
+    padding: .5vw;
+    border: none;
+    font-size: 1.3vw;
+    text-align: center;
+    cursor: pointer;
+}
+
+.header_menu {
+    position: absolute;
+    top: 2.5vw;
+    background-color: #3d5a6ccd;
+    width: 10vw;
+    box-shadow: 0px 5px 5px 0px #000000b8;
+    z-index: 1;
+    text-align: center;
+    display: none;
+}
+
+.header_menu a {
+    font-size: 1.5vw;
+    text-decoration: none;
+    display: block;
+    padding: .5vw;
+    color: #F1F7ED;
+}
+
+#header_section:hover .header_menu {
+    display: block;
+}
+
+#header_section:hover h3 {
+    background-color: #293d4ad7;
+}
+
+.header_menu a:hover {
+    background-color: #293d4ad7;
+}
+
+/* Main Container */
+
+#main_container {
+    margin-top: 35vw;
+    margin-left: 1vw;
+}
+
+/*
+Top Section
+*/
+
+#top_section {
+    text-align: center;
+}
+
+.top_line {
+    margin-bottom: 4vw;
+    border-top: 5px #6A0F49 solid;
+    width: 75%;
+    margin-left: 15vw;
+}
+
+.topic {
+    color: #8D6346;
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+
+.favorite_town {
+    color: #3A5566;
+    font-size: 3vw;
+    font-weight: bold;
+}
+
+.summary {
+    margin-left: 25vw;
+    margin-top: 2vw;
+    color: #3A5566;
+    font-size: 2vw;
+    width: 50%;
+}
+
+.bottom_line {
+    margin-top: 4vw;
+    border-bottom: 5px #6A0F49 solid;
+    width: 75%;
+    margin-left: 15vw;
+    margin-bottom: 15vw;
+}
+
+/*
+Bottom Section
+border: 2px black solid;
+*/
+
+#bottom_section {
+    margin-left: 1.5vw;
+}
+
+.hospitality {
+    background-color: #243641;
+    width: 30%;
+    height: 35vw;
+    border-radius: 10%;
+    text-align: center;
+    opacity: .5;
+    overflow: auto;
+    transition: opacity .5s ease;
+    cursor: default;
+}
+
+.childhood {
+    background-color: #243641;
+    width: 30%;
+    margin-left: 33vw;
+    margin-top: -35vw;
+    height: 35vw;
+    border-radius: 10%;
+    text-align: center;
+    opacity: .5;
+    overflow: auto;
+    transition: opacity .5s ease;
+}
+
+.nature {
+    background-color: #243641;
+    margin-left: 66vw;
+    width: 30%;
+    margin-top: -35vw;
+    height: 35vw;
+    border-radius: 10%;
+    text-align: center;
+    opacity: .5;
+    overflow: auto;
+    transition: opacity .5s ease;
+}
+
+.hospitality:hover,
+.childhood:hover,
+.nature:hover {
+    opacity: 1;
+}
+
+.hospitality a {
+    color: orange;
+    text-decoration: none;
+}
+
+
+.hospitality span:hover {
+   cursor: pointer;
+}
+
+.quote {
+    padding: 4vw;
+    font-size: 2.25vw;
+    color: #f1f7eddd;
+}
+
+.title {
+    margin-top: 2vw;
+    font-size: 3vw;
+    font-weight: bolder;
+    color: #f1f7ede6;
+}
+
+.hospitality::-webkit-scrollbar,
+.childhood::-webkit-scrollbar,
+.nature::-webkit-scrollbar {
+    width: 0px;
+}
+
+.hospitality::-webkit-scrollbar-track,
+.childhood::-webkit-scrollbar-track,
+.nature::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+
+/* Footer */
+
+#footer {
+    position: relative;
+    top: 12vw;
+    text-align: center;
+    font-size: 1.5vw;
+    color: #3A5566;
+}
+
+.footer_line {
+    margin-bottom: 1vw;
+    border-top: 5px #6A0F49 solid;
+    opacity: .5;
+    width: 50%;
+    margin-left: 25vw;
+}

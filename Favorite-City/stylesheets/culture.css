@@ -1,0 +1,409 @@
+/* Culture Stylesheet */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+::-webkit-scrollbar-track {
+    background: #F1F7ED;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #3D5A6C;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #537991;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #F1F7ED;
+}
+
+/* Header and Menu */
+
+#header_section {
+    position: relative;
+    left: 89.8vw;
+    display: block;
+    width: 10vw;
+}
+
+#header_section h3 {
+    background-color: #3d5a6ccd;
+    color: #F1F7ED;
+    padding: .5vw;
+    border: none;
+    font-size: 1.3vw;
+    text-align: center;
+    cursor: pointer;
+}
+
+.header_menu {
+    position: absolute;
+    top: 2.5vw;
+    background-color: #3d5a6ccd;
+    width: 10vw;
+    box-shadow: 0px 5px 5px 0px #000000b8;
+    z-index: 1;
+    text-align: center;
+    display: none;
+}
+
+.header_menu a {
+    font-size: 1.5vw;
+    text-decoration: none;
+    display: block;
+    padding: .5vw;
+    color: #F1F7ED;
+}
+
+#header_section:hover .header_menu {
+    display: block;
+}
+
+#header_section:hover h3 {
+    background-color: #293d4ad7;
+}
+
+.header_menu a:hover {
+    background-color: #293d4ad7;
+}
+
+
+/* Shapes */
+
+.shape_square {
+    background-color: #7CA982;
+    float: right;
+    width: 50%;
+    height: 35vw;
+    
+}
+
+.shape_circle {
+    position: relative;
+    bottom: -15vw;
+    left:  -10vw;
+    border-radius: 50%;
+    background-color: #8D6346;
+    width: 35%;
+    height: 35vw;
+    opacity: .75;
+}
+
+.shape_rectangle {
+    position: relative;
+    margin-left: 22vw;
+    bottom: -15vw;
+    background-color: #6A0F49;
+    width: 75%;
+    height: 25vw;
+    opacity: .8;
+}
+
+/* Main Container */
+
+#main_container {
+    margin-left: 1vw;
+}
+
+/*
+Top Section
+*/
+
+#top_section {
+    height: 50vw;
+    text-align: center;
+}
+
+#top_summary_section {
+    position: relative;
+    top: 10vw;
+    left: 2vw;
+    width: 35%;
+}
+
+.top_title h1 {
+    font-size: 3vw;
+    color: #385364;
+}
+
+.top_summary {
+    float: left;
+    overflow: auto;
+    margin-left: 1vw;
+    margin-top: 2vw;
+    height: 30vw;
+}
+
+.top_summary p{
+    font-size: 2.4vw;
+    color: #2E4553;
+}
+
+.top_image img {
+    float: right;
+    width: 55%;
+    margin-right: 5vw;
+    margin-top: -27vw;
+}
+
+.top_summary::-webkit-scrollbar {
+    width: 0px;
+}
+
+.top_summary::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+
+/*
+Middle Section
+*/
+
+#middle_section {
+    position: relative;
+    top: -20vw;
+    height: 45vw;
+}
+
+.middle_title {
+    position: relative;
+    right: -25vw;
+    text-align: center;
+    width: 50%;
+}
+
+.middle_title h1 {
+    font-size: 2.4vw;
+    color: #263844;
+}
+
+.card_1, .card_2, .card_3 {
+    border: 1px #2E4553 solid;
+    background-color: #F1F7ED;
+    width: 25%;
+    height: 35vw;
+    border-radius: 5%;
+    transition: .2s ease;
+}
+
+.card_1 {
+    position: relative;
+    right: -10vw;
+    top: 5vw;
+}
+
+.card_2 {
+    position: relative;
+    right: -37vw;
+    top: -30vw;
+}
+
+.card_3 {
+    position: relative;
+    right: -64vw;
+    top: -65vw;
+}
+
+.card_1 img, .card_2 img, .card_3 img {
+    border-radius: 50%;
+    width: 65%;
+    height: 15vw;
+    position: relative;
+    right: -4.5vw;
+    top: 2vw;
+    object-fit: cover;
+}
+
+.card_2 img {
+    object-fit: contain;
+    border: 1px black solid;
+}
+
+.card_1 .brief, .card_2 .brief, .card_3 .brief {
+    position: relative;
+    top: 3vw;
+    right: -3vw;
+    height: 13vw;
+    width: 75%;
+    overflow: auto;
+    text-align: center;
+}
+
+.card_1 p, .card_2 p, .card_3 p, a {
+    font-size: 2vw;
+    color: #2E4553;
+    text-decoration: none;
+}
+
+.card_1 .brief::-webkit-scrollbar, 
+.card_2 .brief::-webkit-scrollbar, 
+.card_3 .brief::-webkit-scrollbar {
+    width: 0px;
+}
+
+.card_1 .brief::-webkit-scrollbar-track,
+.card_2 .brief::-webkit-scrollbar-track,
+.card_3 .brief::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.info_button {
+    border-radius: 5px;
+    position: relative;
+    width: 50%;
+    right: -6vw;
+    top: 4vw;
+    padding: .8vw;
+    text-align: center;
+    background-color: #fff;
+}
+
+.info_button p {
+    color: #2E4553;    
+}
+
+/*
+Hover actions
+*/
+.card_1:hover,
+.card_2:hover,
+.card_3:hover,
+.card_1:focus,
+.card_2:focus,
+.card_3:focus {
+    border: 1px #fff solid;
+    background-color: #fff;
+}
+
+.card_1:hover .info_button,
+.card_2:hover .info_button,
+.card_3:hover .info_button,
+.card_1:focus .info_button,
+.card_2:focus .info_button,
+.card_3:focus .info_button {
+    background-color: #8D6346;
+}
+
+.card_1:hover .info_button p,
+.card_2:hover .info_button p,
+.card_3:hover .info_button p,
+.card_1:focus .info_button p,
+.card_2:focus .info_button p,
+.card_3:focus .info_button p {
+    color: #F1F7ED;  
+}
+
+.info_button:hover,
+.info_button:focus {
+    cursor: pointer;
+}
+
+/*
+More Info
+*/
+
+.show_info {
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: .98;
+    cursor: pointer;
+}
+
+.more_quote {
+    background-color: #f1f7ede7;
+    border-radius: 15px;
+    margin: 15% auto;
+    overflow: auto;
+    padding: 30px;
+    width: 50%;
+    height: 23vw;
+    cursor: auto;
+}
+
+.more_quote p, li {
+    color: #2E4553;
+    font-size: 2vw;
+}
+
+.notice {
+    position: relative;
+    top: 4vw;
+    left: 4vw;
+    color: #F1F7ED;
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+.more_quote::-webkit-scrollbar {
+    width: 0px;
+}
+
+.more_quote::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.hide_info {
+    display: none;
+}
+
+
+/*
+Bottom Section
+*/
+
+#bottom_section {
+    width: 50%;
+    position: relative;
+    left: 25vw;
+    top: -20vw;
+}
+
+.radio_title {
+    position: relative;
+    top: -4vw;
+
+}
+
+.radio_title h2 {
+    text-align: center;
+    font-size: 2.6vw;
+    color: #385364;
+}
+
+
+/* Footer */
+
+#footer {
+    position: relative;
+    top: -1vw;
+    text-align: center;
+    font-size: 1.5vw;
+    color: #3A5566;
+}
+
+.footer_line {
+    margin-bottom: 1vw;
+    border-top: 5px #6A0F49 solid;
+    opacity: .5;
+    width: 50%;
+    margin-left: 25vw;
+}

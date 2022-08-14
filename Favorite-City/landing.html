@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheets/landing.css">
+    <script src="scripts/gallery.js"></script>
+    <title>Welcome To The Town of Raleigh</title>
+</head>
+<body>
+
+    <div id="header_section">
+        <h3>Navigation</h3>
+        <div class="header_menu">
+            <a href="history.html">History</a>
+            <a href="favorite.html">Favorite</a>
+            <a href="culture.html">Culture</a>
+            <a href="activities.html">Activities</a>
+            <a href="weather.html">Weather</a>
+            <a href="sitemap.html">Site Map</a>
+            <a href="glossary.html">Glossary</a>
+            <a href="credits.html">Credits</a>
+        </div>
+    </div> <!-- end of header_section -->
+    
+    <div id="welcome_sign_container">
+        <div class="welcome_sign">
+            <h1>Welcome To The Town of Raleigh!</h1>
+        </div>
+    </div> <!-- end of welcome_sign_container -->
+
+    <div id="main_container">
+        <div id="summary_section">
+            <div class="summary_quote">
+                <p>
+                    Better known as the City of Oaks for its plentiful Oak tree scene. Stop in for a bite, pop by an ongoing festival 
+                    or take a tour through one of the many museums the city has to offer. Whatever you do, don't forget to take pictures for the memories.
+                </p>
+            </div>
+            <div class="summary_image">
+                <img src="images/landing_summary_image.jpg" alt="Landing Summary Image" title="Landing Summary Image">
+            </div>
+        </div> <!-- end of summary_section -->
+
+        <div id="gallery_section">
+            <div id="gallery">
+                <div class="title"><h2>Gallery</h2></div>
+
+                <div class="images fade">
+                    <img src="images/raleighAtNight2.jpg" alt="Raleigh At Night" title="Raleigh At Night" style="width: 80%;" onload="currentImage(1)">
+                </div>
+    
+                <div class="images fade">
+                    <img src="images/foodFest.jpg" alt="Food Fest" title="Food Fest" style="width: 80%;">
+                </div>
+    
+                <div class="images fade">
+                    <img src="images/raleighAutmn.jpg" alt="Hero Image" title="Hero Image" style="width: 80%;">
+                </div>
+    
+                <div class="images fade">
+                    <img src="images/beerFest.jpg" alt="Beer Festival" title="Beer Festival" style="width: 80%;">
+                </div>
+    
+                <!-- gallery controls -->
+                <a class="previousButton" onclick="imagePosition(-1)">&#10094;</a>
+                <a class="nextButton" onclick="imagePosition(1)">&#10095;</a>
+
+                <br>
+                <!-- gallery queue -->
+                <div style="text-align: center;">
+                    <span class="queue" onclick="currentImage(1)"></span>
+                    <span class="queue" onclick="currentImage(2)"></span>
+                    <span class="queue" onclick="currentImage(3)"></span>
+                    <span class="queue" onclick="currentImage(4)"></span>
+                </div>
+            </div>
+            <img class="flag" src="images/nc_flag.png" alt="North Carolina Flag">
+        </div> <!-- end of gallery_section -->
+    </div> <!-- end of main_container -->
+
+    <div id="footer">
+        <div class="footer_line"></div>
+        <footer>
+            Deziallia Morris | Seminole State
+        </footer>
+    </div> <!-- end of footer -->
+</body>
+</html>
